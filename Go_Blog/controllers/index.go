@@ -1,11 +1,7 @@
 package controllers
 
-import (
-	"github.com/astaxie/beego"
-)
-
 type IndexController struct {
-	beego.Controller
+	BaseController
 }
 
 // @router /about [get]
