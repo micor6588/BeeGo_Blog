@@ -11,6 +11,7 @@ func (c *IndexController) IndexAbout() {
 
 // @router /message [get]
 func (c *IndexController) IndexMessage() {
+	c.Abort("404")
 	c.TplName = "message.html"
 }
 
