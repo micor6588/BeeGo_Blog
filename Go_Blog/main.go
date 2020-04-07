@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "BeeGO_Blog/Go_Blog/models"
 	_ "BeeGO_Blog/Go_Blog/routers"
 	"strings"
 
