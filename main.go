@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "liteblog/models"
 	_ "liteblog/routers"
 	"strings"
 
