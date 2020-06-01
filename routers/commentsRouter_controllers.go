@@ -27,7 +27,7 @@ func init() {
 
     beego.GlobalControllerRouter["liteblog/controllers:IndexController"] = append(beego.GlobalControllerRouter["liteblog/controllers:IndexController"],
         beego.ControllerComments{
-            Method: "IndeMessage",
+            Method: "IndexMessage",
             Router: `/message`,
             AllowHTTPMethods: []string{"get"},
             MethodParams: param.Make(),

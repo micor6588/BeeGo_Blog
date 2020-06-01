@@ -1,6 +1,7 @@
 package main
 
 import (
+	"liteblog/controllers"
 	_ "liteblog/models"
 	_ "liteblog/routers"
 	"strings"
@@ -10,6 +11,7 @@ import (
 
 func main() {
 	initTemplate()
+	beego.ErrorController(&controllers.ErrorController{})
 	beego.Run()
 }
 
